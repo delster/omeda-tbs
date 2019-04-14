@@ -1,20 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/ui/layout"
+import SEO from "../components/utils/seo"
+import Omeda from "../components/game/omeda"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Home" keywords={[`omeda`, `sandbox`]} />
+    <h1>Omeda TBS</h1>
+    <p>This is a pet project and has no business being a Gatsby site instead of a vanilla React app, yet here we are. <span role="img" aria-label="Smiling Emoji">😀</span></p>
+    <Omeda />
   </Layout>
 )
 
