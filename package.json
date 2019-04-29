@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "David Elster <davidandtheweb@gmail.com>",
   "dependencies": {
+    "auth0-js": "^9.10.2",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
@@ -14,11 +15,13 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.17",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "typeface-anonymous-pro": "^0.0.72"
   },
   "devDependencies": {
     "prettier": "^1.17.0"

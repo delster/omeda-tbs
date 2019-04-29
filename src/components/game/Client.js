@@ -10,7 +10,7 @@ const TurnOrder = styled.div``
 const CombatArea = styled.div``
 const UserInput = styled.div``
 
-const Omeda = () => {
+const Client = () => {
   const [characters, setCharacters] = useState([])
   const [turnOrder, setTurnOrder] = useState([])
 
@@ -41,4 +41,4 @@ const Omeda = () => {
   )
 }
 
-export default Omeda
+export default Client

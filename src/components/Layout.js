@@ -1,7 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import Header from "./header"
+
+import "normalize.css"
+import "typeface-anonymous-pro"
+
+import GlobalStyles from "./elements/GlobalStyles"
+
+import AppWrapper from "./elements/AppWrapper"
+import Header from "./elements/Header"
+import Main from "./elements/Main"
+import Footer from "./elements/Footer"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -15,15 +24,12 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <AppWrapper>
+        <GlobalStyles />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </>
+        <Main>{children}</Main>
+        <Footer />
+      </AppWrapper>
     )}
   />
 )
